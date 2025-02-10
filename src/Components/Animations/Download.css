@@ -1,0 +1,64 @@
+
+.button {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 3px solid var(--button-bg);
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.button,
+.button__icon,
+.button__text {
+    transition: all 0.3s;
+}
+
+.button .button__text {
+    transform: translateX(22px);
+    color: var(--button-bg);
+    font-weight: 600;
+}
+
+.button .button__icon {
+    font-size: 24px;
+    color: var(--button-bg);
+    position: absolute;
+    font-weight: bolder ;
+    transform: translateX(149px);
+    height: 100%;
+    width: 39px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button:hover {
+    background: var(--button-bg);
+}
+
+.button:hover .button__text {
+    color: transparent;
+}
+
+.button:hover .button__icon {
+    width: 178px;
+    transform: translateX(0);
+    color: var(--text-primary);
+
+}
+
+.button:active .button__icon {
+    background-color: var(--button-bg);
+    color: var(--text-primary);
+
+}
+
+.button:active {
+    border: 1px solid var(--button-bg);
+}

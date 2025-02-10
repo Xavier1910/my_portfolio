@@ -1,0 +1,78 @@
+.SocialCardMain {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.SocialCardUp ,.SocialCardDown{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+.SocialCard1,.SocialCard2,.SocialCard3,.SocialCard4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: rgb(157, 157, 157);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.43) 0px -2px 6px 0px inset;            
+    transition: .2s ease-in-out;
+}
+.SocialCard1{
+    border-radius: 90px 5px 5px 5px;
+}
+.SocialCard2 {
+    border-radius: 5px 90px 5px 5px;
+}
+.SocialCard3 {
+    border-radius: 5px 5px 5px 90px;
+}
+.SocialCard4 {
+    border-radius: 5px 5px 90px 5px;
+}
+.SocialCard1 i ,.SocialCard2 i,.SocialCard3 i,.SocialCard4 i{
+    font-size: 2.1rem;
+    position: relative;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+.SocialCard1 i{
+    top: 30px;
+    left: 35px;
+    color: #000000;
+}
+.SocialCard2 i{
+    top: 30px;
+    left: 20px;        
+    color: #2AB540;
+}
+.SocialCard3 i{
+    top:15px;
+    left: 35px;
+    color: #1469C7;
+}
+.SocialCard4 i{
+    top: 15px;
+    left: 15px;
+    color: #FE007F;
+}
+
+
+.SocialCard1:hover, .SocialCard2:hover, .SocialCard3:hover, .SocialCard4:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.SocialCard1:hover{
+    background-color: #000000;
+}
+.SocialCard2:hover {
+    background-color: #2AB540;
+}
+.SocialCard3:hover {
+    background-color: #1469C7;
+}
+.SocialCard4:hover {
+    background-color: #FE007F;
+}
+
+.SocialCard1:hover i ,.SocialCard2:hover i,.SocialCard3:hover i,.SocialCard4:hover i{
+    color: white;
+}
