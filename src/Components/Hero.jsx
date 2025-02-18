@@ -7,8 +7,8 @@ function Hero() {
     <section className="hero" id="home">
       <div className="HeroImage">
         <div className="imageContainer">
+        <img src="images/profile.png " alt="HeroImage" />
         </div>
-        {/* <img src="images/me.png " alt="HeroImage" /> */}
       </div>
       <div className="hero-content">
         <div className="heroBox">
