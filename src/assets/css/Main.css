@@ -826,6 +826,10 @@ p {
         width: 100%;
         position: relative;
     }
+    .imageContainer{
+        height: 70%;
+        width: 80%;
+    }
 
     .hero-content {
         height: 80%;
@@ -908,6 +912,8 @@ p {
         height: 150px;
         display: flex;
         flex-direction: column;
+        border: none;
+
     }
 
     .footer {

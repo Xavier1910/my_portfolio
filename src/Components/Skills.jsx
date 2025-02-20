@@ -40,33 +40,32 @@ function Skills() {
       <h2>My Skills</h2>
       <div className="skills-container">
         {skills.map((category, index) => (
-          <div key={index}   class="card">
-            <div class="tools">
-              <div class="circle">
-                <span class="red box"></span>
+          <div key={index} className="card">
+            <div className="tools">
+              <div className="circle">
+                <span className="red box"></span>
               </div>
-              <div class="circle">
-                <span class="yellow box"></span>
+              <div className="circle">
+                <span className="yellow box"></span>
               </div>
-              <div class="circle">
-                <span class="green box"></span>
-              </div>
-            </div>
-            <div class="card__content">
-                <h3>{category.title}</h3>
-                <div className="skill-items">
-                  {category.value.map((skill, i) => (
-                    
-                    <div key={i} className="skill-item">
-                      {skill.logo && (
-                        <img src={skill.logo} alt={skill.subTitle} />
-                      )}
-                      <span>{skill.subTitle}</span>
-                    </div>
-                  ))}
-                </div>
+              <div className="circle">
+                <span className="green box"></span>
               </div>
             </div>
+            <div className="card__content">
+              <h3>{category.title}</h3>
+              <div className="skill-items">
+                {category.value.map((skill, i) => (
+                  <div key={i} className="skill-item">
+                    {skill.logo && (
+                      <img src={skill.logo} alt={skill.subTitle} />
+                    )}
+                    <span>{skill.subTitle}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         ))}
       </div>
     </section>
