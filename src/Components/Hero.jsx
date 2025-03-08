@@ -19,14 +19,16 @@ function Hero() {
           <p className="heroTitle">
             <ShinyText text={"Full Stack Web Developer"} />
           </p>
-          <p id="Slogan"><span>D</span>esign.<span>D</span>evelop.<span>D</span>eploy</p><br />
-          <p id="desc" className="">Turning ideas into interactive, high-performance web solutions – because great code powers great experiences!</p>
+          <p id="Slogan"><span>D</span>esign.  <span>D</span>evelop.  <span>D</span>eploy</p><br />
+          <p id="desc" className="">Transforming ideas into dynamic, high-performance web solutions. <br />
+                                Crafting seamless, interactive experiences with precision and innovation.
+                                Driven by clean, efficient code that powers exceptional user engagement.
+                                Because every great experience starts with great technology!</p>
           <a href="#projects" className="cta-button">
             Check out my work
           </a>
         </div>
       </div>
-      
     </section>
   );
 }
